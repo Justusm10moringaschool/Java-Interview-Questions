@@ -49,15 +49,26 @@
 * Do objects get passed by reference or value in Java? Elaborate on that.
   - objects
 * What the difference between local, instance and class variables?
+  - An instance class is loaded when an object instance is created and it's value is only constant within the objects scope while a Class-variable is created when a class is initially loaded into the JVM for the first time and they are declared using the 'static' keyword.
+  - Local variable are only accessed within their defined scope which is within the curly brackets while instance variables availability is determined by the access modifier they are declared with. `public`, `private` or `protected`. Public is accessible from anywhere whereas private and protected variables are accessed from the same class or subclasses.
 * What is Dependency Injection?
+  -The process by which `dependency container` analyses the dependencies of a class and create an instance of the class and inject the object into the dependency that way that way does not have a hard dependency in order to enable testing. It uses reflection to inject the object instance.
 * What does the static word mean in Java? Can a static method be overridden in Java?
+  - This denotes the availability of an object to the whole class without having to create a new instance of the class to access it.
 * When is a static block run?
+  - A static block is run when the JVM loads
 * What is reflection?
+  - This is code that is capable of inspecting other code and effecting changes on said code. This is mainly done at runtime where injection is involved.
 * How does the try{} catch{} finally{}
+    - The try block and the finally block(if available) have to be run otherwise the catch bloc is only run if there is an exception in the try block code, otherwise the catch block is skip all together.
 * What is garbage collection? How does it work?
+  - Garbage collection is the automated process at-least-in-java where unreferenced items in memory are deleted by the garbage collector in the JVM(in java)to prevent memory leaks.
 * What is memory leak and how does Java handle it?
+  -A memory leak is when unused objects remain in memory and hence the memory available for the running app is reduced.
 * What does the keyword synchronized mean?
+  - This is when different threads are trying to access and write to the same resource. This can lead to performance and result inconsistencies. So synchronized is keyword that facilitates sequential access of a resource by threads.
 * Explain Generics in Java
+  - Generics are designed to take any and all data types as arguments and return types.
 
 
 ## Web Development
